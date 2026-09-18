@@ -1,0 +1,11 @@
+[package]
+name = "arnes-host-broker"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+wait-timeout = "0.2"
