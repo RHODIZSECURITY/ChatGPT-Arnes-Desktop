@@ -28,6 +28,11 @@ jobs:
       - name: Install
         run: npm ci
 
+      - name: Verify deterministic Windows icon
+        run: |
+          npm run icons
+          git diff --exit-code -- src-tauri/icons/icon.ico
+
       - name: Audit frontend dependencies
         run: npm audit --audit-level=high
 
