@@ -1,0 +1,10 @@
+[workspace]
+members = ["crates/host-broker", "src-tauri"]
+default-members = ["crates/host-broker"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/RHODIZSECURITY/ChatGPT-Arnes-Desktop"
